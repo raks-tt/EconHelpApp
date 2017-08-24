@@ -79,8 +79,7 @@ public class PriceElasticitySupplyModel {
 				}
 			}
 			else {
-	
-				System.out.println("Please enter valid Number");
+				System.out.println("Enter valid Number");
 				root.getChildren().remove(messageEsModulus);
 				root.getChildren().remove(messageEs);
 				root.getChildren().remove(interpretation);
