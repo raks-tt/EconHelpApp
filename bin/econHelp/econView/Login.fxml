@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="econHelp.econController.LoginController">
+   <children>
+      <Pane fx:id="top_pane" prefHeight="704.0" prefWidth="939.0">
+         <children>
+            <Label layoutX="243.0" layoutY="322.0" prefHeight="43.0" prefWidth="79.0" text="BHCC ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAreaID" layoutX="373.0" layoutY="324.0" prefHeight="29.0" prefWidth="252.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnLogin" layoutX="472.0" layoutY="401.0" mnemonicParsing="false" onAction="#clickButtonLogin" prefHeight="43.0" prefWidth="153.0" text="Login" textFill="#e8e4e4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

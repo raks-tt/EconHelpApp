@@ -1,0 +1,110 @@
+
+.root {
+	-fx-background: 	#000000;
+	   }
+	   
+.button {
+	-fx-background-color: 	 #1C2833;
+	-fx-border-radius: 20;
+	 -fx-background-radius: 20;
+	 -fx-text-fill: #8FBC8F;
+
+}
+.button:hover {
+	-fx-border-radius: 100;
+	-fx-border-color : #8FBC8F ;	
+}
+
+.button:hover:pressed {
+-fx-background-color: #2F4F4F;
+-fx-background-radius: 20;
+-fx-border-color :#000000;
+
+}
+#btnHome{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+	 -fx-background-image: url("homeshadow.png");
+
+    -fx-background-size: 25px 25px;
+
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-position:  50px;
+	 }
+#btnFormulaDescription {
+	-fx-background-color: 	#8FBC8F  ;
+	-fx-text-fill: #000000;
+}
+#btnHome:hover:pressed{
+	-fx-background-color:#2F4F4F;
+
+}
+
+#btnMicro{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnMicro:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+#btnMacro{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnMacro:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+#btnLogout{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+	 -fx-background-image: url("logout.png");
+
+    -fx-background-size: 25px 25px;
+
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-position:  50px;
+	 
+}
+#btnLogout:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+
+#btnSlope {
+	-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnPriceElasticityDemand{
+	-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnCrossPriceElasticityDemand{
+			-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnIncomeElasticityDemand {
+		-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#btnPriceElasticityOfSupply{
+			-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+
+#btnFederalReserve {
+	-fx-background-color: #1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+
+

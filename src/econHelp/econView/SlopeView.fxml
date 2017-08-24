@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="econHelp.econController.SlopeController">
+   <children>
+      <Pane fx:id="top_pane" prefHeight="704.0" prefWidth="939.0">
+         <children>
+            <Label layoutX="206.0" layoutY="152.0" prefHeight="34.0" prefWidth="90.0" text="(Y2 - Y1)">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="182.0" prefHeight="34.0" prefWidth="114.0" text="(X2 - X1)">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="-5.0" layoutX="301.0" layoutY="183.0" startX="-100.0" stroke="WHITE" />
+            <Label fx:id="LabelSlope" layoutX="408.0" layoutY="67.0" prefHeight="34.0" prefWidth="94.0" text="Slope" textAlignment="CENTER" textFill="GREEN">
+               <font>
+                  <Font name="Consolas" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="169.0" prefHeight="27.0" prefWidth="46.0" text="m =">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="283.0" prefHeight="27.0" prefWidth="30.0" text="X1" fx:id="x1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="337.0" prefHeight="27.0" prefWidth="30.0" text="X2" fx:id="x2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFieldXOne" layoutX="108.0" layoutY="284.0" prefHeight="25.0" prefWidth="111.0" promptText="Enter Value" />
+            <TextField fx:id="txtFieldXTwo" layoutX="108.0" layoutY="338.0" prefHeight="25.0" prefWidth="111.0" promptText="Enter Value" />
+            <Label fx:id="y1" layoutX="237.0" layoutY="283.0" prefHeight="27.0" prefWidth="30.0" text="Y1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="y2" layoutX="237.0" layoutY="337.0" prefHeight="27.0" prefWidth="30.0" text="Y2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFieldYOne" layoutX="267.0" layoutY="284.0" prefHeight="25.0" prefWidth="111.0" promptText="Enter Value" />
+            <TextField fx:id="txtFieldYTwo" layoutX="267.0" layoutY="338.0" prefHeight="25.0" prefWidth="111.0" promptText="Enter Value" />
+            <Button fx:id="btnCalculate" defaultButton="true" layoutX="168.0" layoutY="396.0" mnemonicParsing="false" onAction="#clickButtonCalculate" prefHeight="34.0" prefWidth="147.0" text="Calculate" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffb6" height="79.0" layoutX="138.0" layoutY="144.0" opacity="0.21" stroke="BLACK" strokeType="INSIDE" width="202.0" />
+            <Button fx:id="btnRefresh" defaultButton="true" layoutX="601.0" layoutY="582.0" mnemonicParsing="false" onAction="#clickButtonRefresh" prefHeight="34.0" prefWidth="147.0" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Clear vlaues" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnFormulaDescription" accessibleRole="THUMB" layoutX="320.0" layoutY="201.0" mnemonicParsing="false" opacity="0.6" prefHeight="25.0" prefWidth="30.0" text="?" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="This is the formula to calculate slope. &#10;Where 'm' is the slope of the line &#10;connecting the the points with &#10;co-ordinates: (X1,Y1) and (X2,Y2).  " />
+               </tooltip>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="btnHome" defaultButton="true" layoutX="1.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonHome" prefHeight="40.0" prefWidth="230.0" text="Home" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Goto home screen" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnMicro" defaultButton="true" layoutX="235.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonMicro" prefHeight="40.0" prefWidth="230.0" text="Micro" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Go to macro options" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnMacro" defaultButton="true" layoutX="469.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonMacro" prefHeight="40.0" prefWidth="230.0" text="Macro" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Goto micro options" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnLogout" defaultButton="true" layoutX="704.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonLogOut" prefHeight="40.0" prefWidth="235.0" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Log Out" />
+         </tooltip>
+      </Button>
+   </children>
+</Pane>

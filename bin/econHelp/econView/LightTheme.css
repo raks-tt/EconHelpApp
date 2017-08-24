@@ -1,0 +1,65 @@
+.root {
+	-fx-background-color:#2F4550;
+	   }
+	   
+.button {
+	-fx-background-color: 	#008000;
+	-fx-border-radius: 20;
+	 -fx-background-radius: 20;
+
+}
+.button:hover {
+	-fx-border-radius: 100;
+	-fx-border-color :#FFFFFF;
+	
+}
+.button:hover:pressed {
+-fx-background-color: #003c00;
+-fx-background-radius: 20;
+-fx-border-color :#000000;
+
+}
+#home{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+	 -fx-background-image: url("homeshadow.png");
+
+    -fx-background-size: 25px 25px;
+
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-position:  5px;
+	 }
+
+
+#home:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+
+#micro{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#micro:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+#macro{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+}
+#macro:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+#logout{
+	-fx-background-color: 	#1C2833  ;
+	-fx-border-radius: 0;
+	 -fx-background-radius: 0;
+	 
+}
+#logout:hover:pressed{
+	-fx-background-color:#2F4F4F;
+}
+

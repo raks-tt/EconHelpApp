@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="econHelp.econController.MacroContententsController">
+   <children>
+      <Pane fx:id="top_pane" prefHeight="704.0" prefWidth="939.0">
+         <children>
+            <Label fx:id="labelContents" layoutX="369.0" layoutY="107.0" prefHeight="34.0" prefWidth="192.0" text="MACRO CONTENTS" textAlignment="CENTER" textFill="GREEN">
+               <font>
+                  <Font name="Consolas" size="24.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@DarkTheme.css" />
+                  <URL value="@LightTheme.css" />
+               </stylesheets>
+            </Label>
+            <Button fx:id="btnFederalReserve" defaultButton="true" layoutX="309.0" layoutY="206.0" mnemonicParsing="false" onAction="#clickButtonFederalReserve" prefHeight="39.0" prefWidth="311.0" text="Federal Reserve Bank-Game" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnHome" defaultButton="true" layoutY="8.0" mnemonicParsing="false" onAction="#clickButtonHome" prefHeight="40.0" prefWidth="230.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Goto home screen" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnMicro" defaultButton="true" layoutX="234.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickButtonMicro" prefHeight="40.0" prefWidth="230.0" text="Micro" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Go to macro options" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnMacro" defaultButton="true" layoutX="468.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickButtonMacro" prefHeight="40.0" prefWidth="230.0" text="Macro" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Goto micro options" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnLogout" defaultButton="true" layoutX="703.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickButtonLogOut" prefHeight="40.0" prefWidth="235.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Empty Tooltip" />
+               </tooltip>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

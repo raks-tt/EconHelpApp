@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="econHelp.econController.MacroController">
+   <children>
+      <Pane fx:id="top_pane" prefHeight="704.0" prefWidth="939.0" />
+      <Button fx:id="btnHome" defaultButton="true" layoutX="1.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonHome" prefHeight="40.0" prefWidth="230.0" text="Home" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Goto home screen" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnMicro" defaultButton="true" layoutX="235.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonMicro" prefHeight="40.0" prefWidth="230.0" text="Micro" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Go to macro options" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnMacro" defaultButton="true" layoutX="469.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonMacro" prefHeight="40.0" prefWidth="230.0" text="Macro" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Goto micro options" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnLogout" defaultButton="true" layoutX="704.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickButtonLogOut" prefHeight="40.0" prefWidth="235.0" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </Button>
+   </children>
+</Pane>
